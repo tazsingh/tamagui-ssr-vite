@@ -17,6 +17,12 @@ export default defineConfig({
   //     "react-native-web": "react-native-web-lite",
   //   },
   // },
+  ssr: {
+    noExternal: [
+      '@tamagui/*',
+      'tamagui'
+    ],
+  },
   plugins: [
     react(),
 

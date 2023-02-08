@@ -31,7 +31,7 @@ const createServer = async () => {
 
     const render = (
       await vite.ssrLoadModule(
-        path.resolve(__dirname, "./src/entry-server.tsx"),
+        "/src/entry-server.tsx",
         { fixStacktrace: true }
       )
     ).render;
