@@ -11,17 +11,9 @@ const tamaguiConfig = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // resolve: {
-  //   alias: {
-  //     "react-native": "react-native-web-lite",
-  //     "react-native-web": "react-native-web-lite",
-  //   },
-  // },
+  // TODO: This doesn't seem to work from within the Tamagui Vite Plugin
   ssr: {
-    noExternal: [
-      '@tamagui/*',
-      'tamagui'
-    ],
+    noExternal: ["@tamagui/*", "tamagui"],
   },
   plugins: [
     react(),
